@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #f8b400;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('banner1.jpg') no-repeat center center/cover;
+            height: 300px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .cakes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .cake-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Cake Shop</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#cakes">Cakes</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="hero" id="home"></div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We specialize in delicious, custom cakes for any occasion. Made with love and the finest ingredients.</p>
+</section>
+
+<section id="cakes">
+    <h2>Our Best-Selling Cakes</h2>
+    <div class="cakes-grid">
+        <div class="cake-card">
+            <h3>Birthday Cake</h3>
+            <img src="birthday.jpg" alt="Birthday Cake" style="width:100%;">
+            <p>Delicious chocolate cake.</p>
+            <p>Rs.350</p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        <div class="cake-card">
+            <h3>Wedding Cake</h3>
+            <img src="wedding-cake.jpg" alt="Wedding Cake" style="width:100%;">
+            <p>Elegant vanilla cake.</p>
+            <p>Rs.2000</p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        <div class="cake-card">
+            <h3>Custom Cake</h3>
+            <img src="custom-cake.jpg" alt="Custom Cake" style="width:100%;">
+            <p>Personalized to your liking.</p>
+            <p>Rs.500</p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>Customer Testimonials</h2>
+    <p>"Best cakes ever!" - Sarah</p>
+    <p>"Loved the custom design!" - Mike</p>
+    <form>
+        <h3>Leave a Review:</h3>
+        <textarea placeholder="Your Review" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@cakeshop.com</p>
+    <p>Phone: 123-456-7890</p>
+</section>
+
+<footer>
+    <p>Follow us on social media</p>
+    <p>© 2024 Cake Shop</p>
+</footer>
+
+</body>
+</html>
